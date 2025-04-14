@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Academia de Treinos | Personal Tech Academy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #623ce6;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      padding: 60px 40px 30px;
+      background: linear-gradient(135deg, #623ce6, #7e57ff);
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    .filters {
+      padding: 20px 40px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .filters select {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card h3 {
+      color: #623ce6;
+      margin-bottom: 10px;
+    }
+
+    .tags {
+      font-size: 0.9em;
+      margin: 8px 0;
+      color: #777;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+
+    .btn {
+      background-color: #ff6b00;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e85b00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div><strong>🏋️ Personal Tech Academy</strong></div>
+  <nav>
+    <a href="#">Treinos</a>
+    <a href="#">Assinatura</a>
+    <a href="#">Como Funciona</a>
+    <a href="#">Entrar</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Treine com Tecnologia. Aplique no Trabalho.</h1>
+  <p>Escolha um desafio real e resolva com IA, automações e ferramentas digitais.</p>
+</section>
+
+<section class="filters">
+  <select>
+    <option>Área</option>
+    <option>Marketing</option>
+    <option>RH</option>
+    <option>Financeiro</option>
+    <option>Operações</option>
+  </select>
+  <select>
+    <option>Tecnologia</option>
+    <option>IA</option>
+    <option>Make</option>
+    <option>Notion</option>
+    <option>ChatGPT</option>
+  </select>
+  <select>
+    <option>Nível</option>
+    <option>Iniciante</option>
+    <option>Intermediário</option>
+    <option>Avançado</option>
+  </select>
+</section>
+
+<section class="card-container">
+
+  <div class="card">
+    <h3>Desafio: Automatize Tarefas com Make</h3>
+    <p>Aprenda a criar fluxos automatizados para eliminar retrabalho usando Make e Google Sheets.</p>
+    <div class="tags">Operações · Make · Intermediário</div>
+    <div class="price">R$ 59</div>
+    <button class="btn">Comprar Treino</button>
+  </div>
+
+  <div class="card">
+    <h3>IA para Produtividade no RH</h3>
+    <p>Use IA para melhorar processos de recrutamento, feedback e comunicação interna.</p>
+    <div class="tags">RH · IA · Iniciante</div>
+    <div class="price">R$ 49</div>
+    <button class="btn">Comprar Treino</button>
+  </div>
+
+  <div class="card">
+    <h3>Desbloqueie o Notion como Central de Processos</h3>
+    <p>Crie dashboards inteligentes e conecte times com Notion + automações.</p>
+    <div class="tags">Operações · Notion · Intermediário</div>
+    <div class="price">Incluído na assinatura</div>
+    <button class="btn">Assine e Treine</button>
+  </div>
+
+</section>
+
+<footer>
+  © 2025 Personal Tech Academy · Todos os direitos reservados · Você não precisa ser da TI para criar com tecnologia 💜
+</footer>
+
+</body>
+</html>

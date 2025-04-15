@@ -71,10 +71,13 @@
       font-size: 1.1em;
     }
 
-    .card p {
+    .card p, .card ul li {
       color: #ccc;
       font-size: 0.95em;
       line-height: 1.4;
+    }
+    .card ul{
+      padding: 20px;
     }
 
     .timeline {
@@ -128,6 +131,54 @@
       text-align: center;
       width: 100%;
     }
+    .steps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 40px;
+    position: relative;
+    padding-left: 40px;
+  }
+
+  .steps-container::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #00C896;
+  }
+
+  .step {
+    position: relative;
+    padding: 10px 20px;
+    background: #111;
+    border-left: 4px solid #00C896;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .step::before {
+    content: '⬤';
+    position: absolute;
+    left: -32px;
+    top: 8px;
+    color: #00C896;
+    font-size: 1em;
+  }
+
+  .step h3 {
+    color: #00C896;
+    margin-bottom: 6px;
+  }
+
+  .step p {
+    color: #ccc;
+    font-size: 0.95em;
+  }
   </style>
 </head>
 
@@ -135,30 +186,65 @@
 
   <!-- Slide 1 -->
   <section class="slide active">
-    <h1>Personal Tech Academy</h1>
-    <p>A primeira academia de treino para o cérebro que ensina profissionais de negócio a criar com tecnologia no
-      trabalho real.</p>
+    <img src="ptechacademy_logo_sf.avif"></img>
+  </br>
+    <h2>A academia de tecnologia para equipes de negócio</h2>
   </section>
 
   <!-- Slide 2 - Visão -->
   <section class="slide">
-    <h2>🌍 Visão de Longo Prazo</h2>
+    <h2>Visão do produto (Curto, médio e longo prazo)</h2>
+    <h3>Ser a principal referência em capacitação tecnológica para equipes de negócio, tornando o uso estratégico de tecnologia uma habilidade essencial em todas as áreas corporativas. </h3>
     <div class="card-container">
       <div class="card">
-        <h3>📚 Treinos Curtos Gravados</h3>
-        <p>Catálogo com treinos curtos aplicados a problemas reais por área com preços acessíveis.</p>
+        <h3>📚 Treinos abertos</h3>
+        <p>Treinos gratuitos ao vivo como estratégia de atração.</p>
+        <p>🗓️ Previsão: MAIO/2025</p>
+        <p>💰 Gratuito (Etratégia de Captação e branding)</p>
       </div>
       <div class="card">
-        <h3>💰 Plano de Assinatura para pessoas</h3>
-        <p>Acesso completo a todos os treinos por um valor fixo + treinos ao vivo e suplementos.</p>
+        <h3>📚 Personal Company Start</h3>
+        <p>Treino ao vivo para empresas com personal exclusivo para tira-dúvidas em tempo real.</p>
+        <p>🗓️ Previsão: MAIO/2025</p>
+        <p>💰 Sob demanda (R$ A partior de 5k - à definir)</p>
+      </div>
+      <div class="card">
+        <h3>📚 Personal Company Pro</h3>
+        <p>Treinos ao vivo PERSONALIZADO para os desafios reais da empresa com personal exclusivo para tira-dúvidas em tempo real..</p>
+        <p>🗓️ Previsão: JUN/2025</p>
+        <p>💰 Sob demanda (R$ A partior de 10k - à definir)</p>
+      </div>
+      <div class="card">
+        <h3>📚 Treinos Virtuais</h3>
+        <p>Treinos gravados.</p>
+        <p>🗓️ Previsão: AGO/2025</p>
+        <p>💰 Sob demanda (R$ à definir)</p>
+      </div>
+      <div class="card">
+        <h3>💰 Academia PRO</h3>
+        <ul>
+          <li>
+            Acervo de treinos gravados
+          </li>
+          <li>
+            Treinos ao vivo exclusivos
+          </li>
+          <li>
+            Deesafios e networking de comunidade
+          </li>
+          <li>
+            Suplementos (ferramentas de produtividade exclusivas da PTech Academy)
+          </li>
+
+        </ul>
+        <p>🗓️ Previsão: 2026</p>
+        <p>💰 Mensal, Semestral e Anual (R$ à definir)</p>
       </div>
       <div class="card">
         <h3>👩‍🏫 Rede de Personais</h3>
         <p>Facilitadores certificados no nosso método e especialistas em cada área.</p>
-      </div>
-      <div class="card">
-        <h3>🛠️ Plataforma com Ferramentas (vamos chamar de suplementos)</h3>
-        <p>Autoavaliação, kits prontos, micro-saas de utilizadade pra habilitar a tech pra todos.</p>
+        <p>🗓️ Previsão: 2026</p>
+        <p>💰 À definir</p>
       </div>
     </div>
   </section>
@@ -166,8 +252,8 @@
   <!-- Slide 3 - Estratégia de Início com 3 Treinos -->
   <section class="slide">
     <h2>🚀 Início Estratégico: Os 3 Treinos-Chave</h2>
-    <p>Lançaremos três treinos com alto potencial de impacto, testando múltiplos formatos (B2C, B2B ao vivo, presencial
-      e personalizado).</p>
+    <p>Lançaremos três treinos com alto potencial de impacto, testando múltiplos formatos (Aberto, Presencial, Virtual, Personal Company)
+    </p>
 
     <div class="card-container">
       <div class="card">
@@ -184,48 +270,9 @@
       </div>
     </div>
   </section>
-  <section class="slide">
-    <h2 style="margin-top:40px;">📦 Formatos de Lançamento</h2>
-    <div class="card-container">
-      <div class="card">
-        <h3>🎥 Gravado B2C</h3>
-        <p>Treinos curtos, práticos e acessíveis (R$49–97) para qualquer profissional.</p>
-      </div>
-      <div class="card">
-        <h3>🧑‍🏫 Workshop B2B</h3>
-        <p>Versão ao vivo e exclusiva para empresas, com interação e dúvidas ao vivo.</p>
-      </div>
-      <div class="card">
-        <h3>🏢 Personal Company</h3>
-        <p>Aplicação personalizada com diagnóstico de desafios reais dos times.</p>
-      </div>
-      <div class="card">
-        <h3>👥 Testes Presenciais</h3>
-        <p>Turmas presenciais em Floripa para validar formato e gerar conteúdo real.</p>
-      </div>
-    </div>
-  </section>
-  <section class="slide">
-    <h2 style="margin-top:40px;">💡 Estratégia de Marketing</h2>
-    <div class="card-container">
-      <div class="card">
-        <h3>🚀 Treinos Abertos ao Vivo</h3>
-        <p>Formato gratuito, rápido e poderoso. Um “fagulha” do treino completo pago.</p>
-      </div>
-      <div class="card">
-        <h3>🎬 Teasers Criativos</h3>
-        <p>Reels, contagens regressivas, spoilers com Tico e Teco — tudo para gerar desejo e hype.</p>
-      </div>
-      <div class="card">
-        <h3>🧲 Funil com CTA Clara</h3>
-        <p>Todos os treinos abertos levam para uma oferta direta do treino completo (gravado, workshop ou Personal).</p>
-      </div>
-    </div>
-  </section>
-
   <!-- Slide 5 - B2B -->
   <section class="slide">
-    <h2>🏢 Modelo B2B – Personal Company</h2>
+    <h2>Como funciona o Personal Company PRO (Produto Enterprise)</h2>
     <div class="card-container">
       <div class="card">
         <h3>🔍 Diagnóstico</h3>
@@ -272,134 +319,45 @@
       </div>
     </div>
   </section>
-  
-        
-  </section>
 
-  <!-- Slide 7 - Produtos -->
-  <section class="slide">
-    <h2>🎯 Modelos de Produto</h2>
-    <div class="card-container">
-      <div class="card">
-        <h3>📡 Treino Aberto</h3>
-        <p>Gratuito, online, ao vivo e orientado a desafios reais.</p>
-      </div>
-      <div class="card">
-        <h3>💻 Treino Focado (gravado e ao vivo)</h3>
-        <p>Pago, com aplicação prática e templates inclusos.</p>
-      </div>
-      <div class="card">
-        <h3>🏠 Work Hacker Sessions</h3>
-        <p>Presenciais em Floripa, conexão direta com comunidade.</p>
-      </div>
-      <div class="card">
-        <h3>🏢 Personal Company</h3>
-        <p>Diagnóstico + ementa sob medida para equipes.</p>
-      </div>
-      <div class="card">
-        <h3>🔓 Assinatura Work Hacker</h3>
-        <p>Acesso total aos treinos, ferramentas e comunidade.</p>
-      </div>
+  <!-- Slide X - Jornada de Evolução dos Treinos -->
+<section class="slide">
+  <h2>📈 Jornada – Evolução dos Treinos</h2>
+  <p>Do primeiro contato até a transformação real dentro das empresas. Cada nível entrega mais profundidade, impacto e personalização.</p>
+
+  <div class="steps-container">
+    <div class="step">
+      <h3>1. 🔥 Treino ao Vivo</h3>
+      <p>Gratuito, introdutório e prático. Gera interesse e ativa o desejo de aplicar.</p>
     </div>
-  </section>
-
-  <!-- Slide 8 -->
-  <section class="slide">
-    <h2>💥 Conclusão e Próximos Passos</h2>
-    <p>O plano está em movimento. Agora é hora de lançar os primeiros treinos, captar parceiros e transformar cada
-      desafio em prática real.</p>
-    <p>Bem-vinda à construção da primeira academia tech com alma de performance. 💜</p>
-  </section>
+    <div class="step">
+      <h3>2. 🎥 Personal Virtual</h3>
+      <p>Treino gravado, acessível e estruturado. Ideal para treinar no próprio ritmo.</p>
+    </div>
+    <div class="step">
+      <h3>3. 🏠 Personal Presencial</h3>
+      <p>Turma presencial em Floripa. Conexão real com conteúdo e comunidade.</p>
+    </div>
+    <div class="step">
+      <h3>4. 💼 Company Start</h3>
+      <p>Treino ao vivo para empresas. Aplicação padrão, com tira-dúvidas ao vivo.</p>
+    </div>
+    <div class="step">
+      <h3>5. 🚀 Company Pro</h3>
+      <p>Diagnóstico + solução aplicada com os times. Produto enterprise da Personal.</p>
+    </div>
+    <div class="step">
+      <h3>6. 🏋🏻‍♂️ Academia Pro</h3>
+      <p>Ambiente de crescimento contínuo para profissinais que lideram com tecnologia aplicada de forma inteligente nos negócios.</p>
+    </div>
+  </div>
+</section>
 
   <!-- Navegação -->
   <div class="nav-buttons">
     <button onclick="prevSlide()">⬅️ Anterior</button>
     <button onclick="nextSlide()">Próximo ➡️</button>
   </div>
-  <!DOCTYPE html>
-  <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <title>Personal Tech Academy – Estratégia</title>
-    <style>
-      body {
-        background-color: #000;
-        color: #fff;
-        font-family: 'Segoe UI', sans-serif;
-        text-align: center;
-        padding: 60px 20px;
-      }
-  
-      h1 {
-        color: #00C896;
-        font-size: 2.5em;
-        margin-bottom: 10px;
-      }
-  
-      p {
-        color: #ccc;
-        font-size: 1.2em;
-        margin-bottom: 40px;
-      }
-  
-      .link-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-      }
-  
-      .card-link {
-        background-color: #111;
-        border: 2px solid #00C896;
-        border-radius: 12px;
-        padding: 30px 20px;
-        width: 260px;
-        text-decoration: none;
-        color: #fff;
-        transition: 0.3s ease;
-      }
-  
-      .card-link:hover {
-        background-color: #00C896;
-        color: #000;
-      }
-  
-      .card-link h3 {
-        margin-bottom: 10px;
-        color: #00C896;
-      }
-  
-      .card-link:hover h3 {
-        color: #000;
-      }
-    </style>
-  </head>
-  <body>
-  
-    <h1>🌟 Estratégia Work Hacker</h1>
-    <p>Selecione um bloco para visualizar o conteúdo completo da Personal Tech Academy:</p>
-  
-    <div class="link-grid">
-      <a class="card-link" href="home-academia-exemplo.html">
-        <h3>🏠 Visão da Academia</h3>
-        <p>Exemplo da página da academia com treinos gravados.</p>
-      </a>
-  
-      <a class="card-link" href="pt-estrategia.html">
-        <h3>🚀 Apresentação Estratégica</h3>
-        <p>Slides interativos com visão de longo prazo e fases de execução.</p>
-      </a>
-  
-      <a class="card-link" href="processo-b2b.html">
-        <h3>🏢 Processo B2B</h3>
-        <p>Fluxo visual da jornada corporativa Personal Company.</p>
-      </a>
-    </div>
-  
-  </body>
-  </html>
-  
 
   <script>
     let currentSlide = 0;
